@@ -5,10 +5,10 @@ GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 4
+  serializedVersion: 5
   m_Component:
-  - 4: {fileID: 414190}
-  - 136: {fileID: 13646082}
+  - component: {fileID: 414190}
+  - component: {fileID: 13646082}
   m_Layer: 14
   m_Name: TrainCollider
   m_TagString: Untagged
@@ -21,12 +21,12 @@ GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 4
+  serializedVersion: 5
   m_Component:
-  - 4: {fileID: 419046}
-  - 33: {fileID: 3366458}
-  - 23: {fileID: 2374994}
-  - 95: {fileID: 9514056}
+  - component: {fileID: 419046}
+  - component: {fileID: 3366458}
+  - component: {fileID: 2374994}
+  - component: {fileID: 9514056}
   m_Layer: 14
   m_Name: Train
   m_TagString: Untagged
@@ -39,10 +39,10 @@ GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 4
+  serializedVersion: 5
   m_Component:
-  - 4: {fileID: 470490}
-  - 65: {fileID: 6584352}
+  - component: {fileID: 470490}
+  - component: {fileID: 6584352}
   m_Layer: 14
   m_Name: TrainCollider
   m_TagString: Untagged
@@ -62,6 +62,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 419046}
   m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &419046
 Transform:
   m_ObjectHideFlags: 1
@@ -76,6 +77,7 @@ Transform:
   - {fileID: 414190}
   m_Father: {fileID: 0}
   m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &470490
 Transform:
   m_ObjectHideFlags: 1
@@ -88,6 +90,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 419046}
   m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!23 &2374994
 MeshRenderer:
   m_ObjectHideFlags: 1
@@ -97,22 +100,30 @@ MeshRenderer:
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
   m_Materials:
   - {fileID: 2100000, guid: a84eed80804d7d64d88e936b9e48a476, type: 2}
-  m_SubsetIndices: 
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
   m_StaticBatchRoot: {fileID: 0}
-  m_UseLightProbes: 1
-  m_ReflectionProbeUsage: 1
   m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
+  m_SortingLayer: 0
   m_SortingOrder: 0
 --- !u!33 &3366458
 MeshFilter:

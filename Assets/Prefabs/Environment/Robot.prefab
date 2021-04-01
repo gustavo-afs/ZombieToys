@@ -5,10 +5,10 @@ GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 4
+  serializedVersion: 5
   m_Component:
-  - 4: {fileID: 405456}
-  - 65: {fileID: 6546722}
+  - component: {fileID: 405456}
+  - component: {fileID: 6546722}
   m_Layer: 14
   m_Name: RobotCollider
   m_TagString: Untagged
@@ -21,10 +21,10 @@ GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 4
+  serializedVersion: 5
   m_Component:
-  - 4: {fileID: 432620}
-  - 65: {fileID: 6553732}
+  - component: {fileID: 432620}
+  - component: {fileID: 6553732}
   m_Layer: 14
   m_Name: RobotCollider
   m_TagString: Untagged
@@ -37,10 +37,11 @@ GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 4
+  serializedVersion: 5
   m_Component:
-  - 4: {fileID: 403546}
-  - 65: {fileID: 6585206}
+  - component: {fileID: 403546}
+  - component: {fileID: 6585206}
+  - component: {fileID: 65333622937623734}
   m_Layer: 14
   m_Name: RobotCollider
   m_TagString: Untagged
@@ -53,10 +54,10 @@ GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 4
+  serializedVersion: 5
   m_Component:
-  - 4: {fileID: 427290}
-  - 65: {fileID: 6548252}
+  - component: {fileID: 427290}
+  - component: {fileID: 6548252}
   m_Layer: 14
   m_Name: RobotCollider
   m_TagString: Untagged
@@ -69,10 +70,10 @@ GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 4
+  serializedVersion: 5
   m_Component:
-  - 4: {fileID: 428998}
-  - 65: {fileID: 6541706}
+  - component: {fileID: 428998}
+  - component: {fileID: 6541706}
   m_Layer: 14
   m_Name: RobotCollider
   m_TagString: Untagged
@@ -85,11 +86,11 @@ GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 4
+  serializedVersion: 5
   m_Component:
-  - 4: {fileID: 415258}
-  - 33: {fileID: 3386516}
-  - 23: {fileID: 2368770}
+  - component: {fileID: 415258}
+  - component: {fileID: 3386516}
+  - component: {fileID: 2368770}
   m_Layer: 14
   m_Name: Robot
   m_TagString: Untagged
@@ -102,10 +103,10 @@ GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 4
+  serializedVersion: 5
   m_Component:
-  - 4: {fileID: 432558}
-  - 65: {fileID: 6535916}
+  - component: {fileID: 432558}
+  - component: {fileID: 6535916}
   m_Layer: 14
   m_Name: RobotCollider
   m_TagString: Untagged
@@ -125,6 +126,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 415258}
   m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &405456
 Transform:
   m_ObjectHideFlags: 1
@@ -137,6 +139,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 415258}
   m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &415258
 Transform:
   m_ObjectHideFlags: 1
@@ -155,6 +158,7 @@ Transform:
   - {fileID: 432558}
   m_Father: {fileID: 0}
   m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &427290
 Transform:
   m_ObjectHideFlags: 1
@@ -167,6 +171,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 415258}
   m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &428998
 Transform:
   m_ObjectHideFlags: 1
@@ -179,6 +184,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 415258}
   m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &432558
 Transform:
   m_ObjectHideFlags: 1
@@ -191,6 +197,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 415258}
   m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &432620
 Transform:
   m_ObjectHideFlags: 1
@@ -203,6 +210,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 415258}
   m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!23 &2368770
 MeshRenderer:
   m_ObjectHideFlags: 1
@@ -212,22 +220,30 @@ MeshRenderer:
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
   m_Materials:
   - {fileID: 2100000, guid: 6054d3caca112824ea19040c7be7fc97, type: 2}
-  m_SubsetIndices: 
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
   m_StaticBatchRoot: {fileID: 0}
-  m_UseLightProbes: 1
-  m_ReflectionProbeUsage: 1
   m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
+  m_SortingLayer: 0
   m_SortingOrder: 0
 --- !u!33 &3386516
 MeshFilter:
@@ -306,8 +322,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1.7261565, y: 1.1397734, z: 3.1002936}
-  m_Center: {x: 0.80036193, y: -0.44283915, z: -0.49197662}
+  m_Size: {x: 0.682021, y: 1.1397734, z: 3.1002936}
+  m_Center: {x: 1.3224258, y: -0.44283915, z: -0.49197662}
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
@@ -335,3 +351,15 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 151542}
   m_IsPrefabParent: 1
+--- !u!65 &65333622937623734
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 114952}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.0964408, y: 1.0884309, z: 0.6767028}
+  m_Center: {x: 0.39387214, y: -0.39421546, z: 0.81546664}
