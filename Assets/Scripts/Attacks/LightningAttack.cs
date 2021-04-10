@@ -19,6 +19,7 @@ public class LightningAttack : MonoBehaviour
 	//Called from PlayerAttack script
 	public void Fire()
 	{
+		
 		//Create a ray from the current position and extending straight forward
 		Ray ray = new Ray(transform.position, transform.forward);
 		//Create a RaycastHit variable which will store information about the raycast
@@ -48,6 +49,7 @@ public class LightningAttack : MonoBehaviour
 			//...place the end of the bolt at maximum range
 			lightningBolt.EndPoint = ray.GetPoint(range);
 		}
+		
 		//Turn the lightning bolt game object on
 		lightningBolt.gameObject.SetActive(true);
 	}
