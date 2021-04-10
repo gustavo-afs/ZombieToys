@@ -40,7 +40,6 @@ public class AllyManager : MonoBehaviour
 		//If there is an allyImage and the player can summon an ally, show the image
 		if (allyImage != null && CanSummonAlly())
 			allyImage.enabled = true;
-		
 	}
 		
 	public bool CanSummonAlly()

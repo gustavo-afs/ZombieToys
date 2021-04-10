@@ -70,7 +70,6 @@ public class PlayerAttack : MonoBehaviour
 	//This method is called whenever the player presses the attack input
 	public void Fire()
 	{
-		
 		//If the attack isn't ready, or the player cannot attack, leave
 		if (!ReadyToAttack() || !canAttack)
 			return;
@@ -123,7 +122,7 @@ public class PlayerAttack : MonoBehaviour
 		//If there is no lightning attack, leave
 		if (lightningAttack == null)
 			return;
-		
+
 		//Fire lightning
 		lightningAttack.Fire();
 		//Record the cooldown of the lightning attack

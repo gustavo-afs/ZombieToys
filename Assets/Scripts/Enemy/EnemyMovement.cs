@@ -105,14 +105,12 @@ public class EnemyMovement : MonoBehaviour
 	//This method is called when the enemy is hit by a stink attack
 	public void Runaway()
 	{
-		
 		//The enemy is now running away
 		isRunningAway = true;
 		//Get a vector from the player's position to the enemy's position
 		Vector3 runVector = transform.localPosition - GameManager.Instance.EnemyTarget.position;
 		//Use the runVector to run directly away from the player
-		runAwayPosition = -(runVector.normalized * runAwayDistance);
-		
+		runAwayPosition = runVector.normalized * runAwayDistance;
 	}
 
 	//This method is called by the StinkHit script when the stink cloud wears off
